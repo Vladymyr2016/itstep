@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Football Field</title>
+    <style>
+      /* Стилі для футбольного поля */
+      body,
+      html {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+      }
+
+      .field {
+        background-color: green;
+        position: relative;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      /* Стилі для м'яча */
+      .ball {
+        width: 100px;
+        height: 100px;
+        background-image: url('https://cdn-icons-png.flaticon.com/512/760/760426.png'); /* Посилання на зображення м'яча */
+        background-size: cover;
+        border-radius: 50%;
+        position: absolute;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="field">
+      <div class="ball"></div>
+    </div>
+  </body>
+</html>

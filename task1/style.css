@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+}
+
+.container {
+    border: 1px solid blue;
+    margin: 50px;
+    background-color: aqua;
+    padding: 10px 25px 10px 25px;
+}
+
+.h1 {
+    margin: 0 auto;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.input {
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    width: 250px;
+    height: 25px;
+    border-radius: 10px;
+}
