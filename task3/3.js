@@ -4,15 +4,18 @@ const ballsize = 100;
 
 field.addEventListener('click', (event) => {
   const fieldPlace = field.getBoundingClientRect();
-  console.log(fieldPlace);
-  let newX = event.clientX - fieldPlace.left - ballsize / 2;
 
+  let newX = event.clientX - fieldPlace.left - ballsize / 2;
   let newY = event.clientY - fieldPlace.top - ballsize / 2;
 
-  if (newX < 0) newX = 0;
-  if (newY < 0) newY = 0;
-  if (newX > fieldPlace.width + ballsize) newX = fieldPlace.width + ballsize;
-  if (newY > fieldPlace.height + ballsize) newY = fieldPlace.height + ballsize;
+  newX = Math.max(
+    ballsize / 2,
+    Math.min(newX, fieldPlace.width - ballsize / 2)
+  );
+  newY = Math.max(
+    ballsize / 2,
+    Math.min(newY, fieldPlace.height - ballsize / 2)
+  );
 
   ball.style.left = `${newX}px`;
   ball.style.top = `${newY}px`;
