@@ -1,0 +1,18 @@
+ #resizable-block {
+     width: 300px;
+     height: 200px;
+     border: 2px solid #000;
+     padding: 10px;
+     position: relative;
+     overflow: hidden;
+ }
+
+ #resizer {
+     width: 10px;
+     height: 10px;
+     background: #000;
+     position: absolute;
+     right: 0;
+     bottom: 0;
+     cursor: se-resize;
+ }
